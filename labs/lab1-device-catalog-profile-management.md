@@ -1,6 +1,9 @@
 ### :rocket: Lab 1: Device Catalog & Profile Management
 
+---
+
 #### :dart: User Story
+
 > As an engineer, I want to view the list of connected devices, edit their configurations (like refresh rate and telemetry settings), and update the data through a REST API backend, so that I can manage device settings remotely.
 
 ---
@@ -69,6 +72,45 @@ By the end of this lab, learners will:
 - :warning: **Implement error handling** in case the device update fails (e.g., network issues, invalid data).
 - **Add loading indicators** when fetching data from the API.
 - **Implement pagination or filtering** for large device catalogs.
+
+---
+
+#### :shield: Sample JSON Data for Backend (Mock API)
+
+```json
+{
+  "devices": [
+    {
+      "id": "dev123",
+      "name": "Smart Sensor 1",
+      "status": "online",
+      "location": "Building 5 - Floor 2",
+      "lastSeen": "2025-07-01T09:45:00Z",
+      "firmwareVersion": "1.2.3",
+      "type": "sensor",
+      "tags": ["iot", "sensor", "smart"],
+      "config": {
+        "refreshRate": 30,
+        "sendTelemetry": true
+      }
+    },
+    {
+      "id": "dev124",
+      "name": "Smart Camera 2",
+      "status": "offline",
+      "location": "Building 3 - Floor 1",
+      "lastSeen": "2025-07-01T08:30:00Z",
+      "firmwareVersion": "1.0.0",
+      "type": "camera",
+      "tags": ["iot", "camera", "security"],
+      "config": {
+        "refreshRate": 60,
+        "sendTelemetry": false
+      }
+    }
+  ]
+}
+```
 
 ---
 
