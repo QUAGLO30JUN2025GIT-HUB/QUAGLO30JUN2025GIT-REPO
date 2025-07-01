@@ -1,3 +1,4 @@
+// Creting a component from Scratch
 // import { Component } from '@angular/core'
 
 // // Decorator (Annotations in Java)
@@ -17,3 +18,7 @@
 //     ]
 //     // Component logic goes here
 // }
+
+
+import {bootstrapApplication} from '@angular/platform-browser';
+import {appConfig} from './app/app.config';

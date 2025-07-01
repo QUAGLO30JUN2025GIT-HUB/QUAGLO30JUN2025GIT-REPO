@@ -2,7 +2,7 @@ import { Component } from "@angular/core"
 @Component({
     standalone: true,
     selector: 'app-display-employee',
-    template: `<h1>{{employeeName}}</h1>
+    template: `<h1>Employee's Name : {{employeeName}}</h1>
      <h1>Employee id : {{employee.id}}</h1>
      <h2>Employee name : {{employee.name}}</h2>
      <h3>Employee salary : {{employee.salary}}</h3>
