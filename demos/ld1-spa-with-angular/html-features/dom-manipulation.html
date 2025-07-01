@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document Manipulation</title>
+</head>
+
+<body>
+    <input type="button" value="Change this document" onclick="change()">
+    <h2>Topic 1</h2>
+    <h2>Topic 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque porro obcaecati, magni adipisci
+        beatae, vero aperiam suscipit amet quos voluptates nisi quasi, inventore et? Nisi corporis in numquam
+        asperiores!</p>
+    <script>
+        function change() {
+            document.title = "Manipulated Document";
+            document.body.style.backgroundColor = "lightblue";
+            document.getElementsByTagName("h2")[1].style.color = "red";
+            document.getElementsByTagName("p")[0].innerHTML = "This is a new paragraph content after manipulation.";
+
+            var defaultFontFamily = window.getComputedStyle(document.getElementsByTagName("p")[0]).fontFamily;
+
+            window.alert(defaultFontFamily)
+
+            window.document.getElementsByTagName("p")[0].style.fontFamily = "Arial";
+
+            // dynamically add an element (a paragraph)
+            var newParagraph = document.createElement("p");
+            newParagraph.textContent = "Dynamically added paragraph!";
+            document.body.appendChild(newParagraph);
+
+            for (var i = 0; i < 5; i++) {
+                var newElement = document.createElement("h3");
+                newElement.textContent = "Dynamically added heading " + (i + 1);
+                document.body.appendChild(newElement);
+            };
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- Try : Imagine something dynamic which you have seen on web pages, and implement it..... -->

@@ -489,10 +489,10 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="rmqtLOiFDf1wfwx7WdaD-1" value="HTML / CSS / JS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
-          <mxGeometry x="90" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="305" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rmqtLOiFDf1wfwx7WdaD-2" value="DOM, CSSOM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
-          <mxGeometry x="90" y="120" width="120" height="60" as="geometry" />
+          <mxGeometry x="305" y="170" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

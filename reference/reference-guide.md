@@ -1,6 +1,6 @@
 # :rocket: Developer Reference Sheet
 
-A comprehensive conceptual map of Angular, related technologies, and surrounding ecosystems—designed for ongoing reference and context, not as a beginner’s guide.
+A comprehensive conceptual map of Angular, related technologies, and surrounding ecosystems—designed for ongoing reference and context.
 
 ---
 
@@ -10,7 +10,7 @@ A comprehensive conceptual map of Angular, related technologies, and surrounding
 
 - **Console App**: Text-based user interface.
 - **GUI**: Graphical User Interface apps.
-- **Java / Visual Basic**: Backend and desktop programming languages used in enterprise-grade applications.
+- **Java **: Backend and desktop programming language used in enterprise-grade applications.
 
 #### :gear: Specifications
 
@@ -43,7 +43,7 @@ A comprehensive conceptual map of Angular, related technologies, and surrounding
 |--------------|-------------------------------------------------|
 | jQuery       | Simplified JavaScript and DOM manipulation      |
 | Bootstrap    | UI framework with responsive grid and components|
-| Raw DOM (deprecated) | Direct DOM manipulation, now minimized for performance & abstraction |
+| Raw DOM | Direct DOM manipulation, now minimized for performance & abstraction |
 
 ---
 
