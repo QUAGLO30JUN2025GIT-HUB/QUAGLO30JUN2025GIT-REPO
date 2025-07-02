@@ -1,1 +1,16 @@
-<p>add-emp works!</p>
+<div class="container">
+    <div class="form-group">
+        <form [formGroup]="addForm" (ngSubmit)='saveEmployee()'>
+            <label for="id">Employee ID</label>
+            <input type="text" formControlName="id" class="form-control" id="id" placeholder="Enter Employee ID"
+                style="width:250px">
+            <label for="id">Employee Name</label>
+            <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter Employee Name"
+                style="width:250px">
+            <label for="id">Employee Salary</label>
+            <input type="text" formControlName="salary" class="form-control" id="salary" placeholder="Enter Employee Salary"
+                style="width:250px">
+            <button class="btn btn-success" type="submit">Save</button>
+        </form>
+    </div>
+</div>

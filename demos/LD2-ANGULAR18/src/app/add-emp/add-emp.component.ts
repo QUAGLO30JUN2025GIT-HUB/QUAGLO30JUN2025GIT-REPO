@@ -4,7 +4,7 @@ import { EmployeeService } from '../service/employee.service';
 @Component({
   selector: 'app-add-emp',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './add-emp.component.html',
   styleUrl: './add-emp.component.css'
 })
@@ -14,7 +14,7 @@ export class AddEmpComponent {
   addForm : FormGroup;
   constructor(private formBuilder: FormBuilder, private employeeService:EmployeeService){
     this.addForm = this.formBuilder.group({
-    id : [1000],
+    id : [],
     name : ["John Doe"],
     salary : [50000]
     });
