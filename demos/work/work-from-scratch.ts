@@ -37,3 +37,21 @@
 // export class AppModule{
 
 // }
+
+// import { NgModule } from '@angular/core';
+
+
+// @NgModule({
+//     // The declarations array is used to declare the components, directives, and pipes that belong to this module.
+//     declarations: [],
+//     imports: [],
+//     providers: [],
+//     bootstrap: []
+// })
+
+// export class AppRoutingModule {
+//     // This module is used to configure the routing for the application.
+//     // It can be used to define routes and other routing-related configurations.
+//     // The AppRoutingModule is typically imported into the root module of the application (AppModule).
+
+// }
