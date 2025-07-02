@@ -22,3 +22,18 @@
 
 // import {bootstrapApplication} from '@angular/platform-browser';
 // import {appConfig} from './app/app.config';
+
+// import { NgModule } from '@angular/core';
+// import { AppComponent } from './app.component';
+// import { AddEmpComponent } from './add-emp/add-emp.component';
+// @NgModule({
+//     // The declarations array is used to declare the components, directives, and pipes that belong to this module.
+//     declarations: [AppComponent,AddEmpComponent],
+//     imports: [],
+//     providers: [],
+//     bootstrap: []
+// })
+
+// export class AppModule{
+
+// }
