@@ -1,1 +1,26 @@
-<h1>Lab : Display the employees data here!</h1>
+<div class="container">
+  <br>
+  <h5>Employe Details</h5>
+
+  <div>
+    <div style="width:50px">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Employee Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tbody>
+          <tr *ngFor="let employee of employeeList">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.salary}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

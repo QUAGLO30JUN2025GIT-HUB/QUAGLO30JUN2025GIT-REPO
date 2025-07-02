@@ -1,4 +1,5 @@
-### :rocket: Lab 1: Device Catalog & Profile Management
+### :rocket: Case Study Lab 1 
+### Angular Core: Device Catalog & Profile Management
 
 ---
 

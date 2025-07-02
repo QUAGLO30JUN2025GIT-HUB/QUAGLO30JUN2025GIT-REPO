@@ -2,11 +2,12 @@ import { Component,OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Employee } from './model/Employee';
 import { EmployeeService } from './service/employee.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

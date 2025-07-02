@@ -6,6 +6,8 @@ import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),
+    // The provider for the HTTP client is necessary to make HTTP requests in Angular applications.
+    // It allows the application to communicate with backend services or APIs.
     provideHttpClient(),
   ]
 };
