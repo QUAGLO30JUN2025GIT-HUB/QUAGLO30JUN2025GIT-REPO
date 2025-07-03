@@ -35,8 +35,9 @@ export class EmployeeService {
     }
     getEmployees() {
         console.log("Fetching employees from: " + this.baseUrl);
-        // write the logic to fetch employees from the backend API endpoint.
 
+        // The get method returns and Observable of type Employee array.
+        // The Observable is a stream of data that can be subscribed to.
         return this.httpClient.get<Employee[]>(this.baseUrl);
     }
 

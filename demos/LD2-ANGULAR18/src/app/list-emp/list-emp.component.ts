@@ -3,6 +3,7 @@ import { Component,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeeService } from '../service/employee.service';
 import { Employee } from '../model/Employee';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-list-emp',
@@ -17,6 +18,9 @@ export class ListEmpComponent {
   constructor(private employeeService: EmployeeService) {
   }
   ngOnInit(): void {
+    const employeeObservable: Observable<Employee[]>   = this.employeeService.getEmployees();
+
+    // The Observer subscribes to the Observable to receive the data.
       this.employeeService.getEmployees().subscribe((dataFromExternalService) => {
           this.employeeList = dataFromExternalService;
           console.log("Employees fetched successfully: ", this.employeeList);
