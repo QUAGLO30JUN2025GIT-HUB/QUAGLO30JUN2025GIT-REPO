@@ -2,7 +2,7 @@
 // S1: Standalone to Modular
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 // import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+// import { AppComponent } from './app/app.component.ts.exclude';
 import { AddEmpComponent } from './app/add-emp/add-emp.component';
 import { AppModule } from './app/app.module';
 

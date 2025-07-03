@@ -1,9 +1,5 @@
-import { Component,OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Employee } from './model/Employee';
-import { EmployeeService } from './service/employee.service';
-import { CommonModule } from '@angular/common';
-
 @Component({
   selector: 'app-root',
   // standalone: true,
@@ -12,15 +8,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+// The export keyword is used to make the class available for import in other files.
+export class AppComponent  {
   title = 'LD2-ANGULAR18';
-  employeeList? : Employee[];
-  constructor(private employeeService: EmployeeService) {
+  
+  constructor() {
+    
   }
-  ngOnInit(): void {
-      this.employeeService.getEmployees().subscribe((dataFromExternalService) => {
-          this.employeeList = dataFromExternalService;
-          console.log("Employees fetched successfully: ", this.employeeList);
-      });
-  }
+
 }
