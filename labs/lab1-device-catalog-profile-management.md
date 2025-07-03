@@ -1,3 +1,5 @@
+## Task : Restructuring the project, migrating forwards/ backwards on components, implement routing, creating custom modules, one component dynamically injected into another when a matching route is navigated.  : till :11:30.
+
 ### :rocket: Case Study Lab 1 
 ### Angular Core: Device Catalog & Profile Management
 
