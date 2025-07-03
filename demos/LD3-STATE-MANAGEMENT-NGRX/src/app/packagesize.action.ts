@@ -10,4 +10,4 @@ import { createAction } from "@ngrx/store";
 // export const addPackageSize = createAction("[Package Size] Add", props<{ size: number }>());
 export const increment = createAction("[Package Size] Increment");
 export const decrement = createAction("[Package Size] Decrement");
-// Do the reset.
+// Try the reset.

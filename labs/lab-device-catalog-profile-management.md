@@ -1,4 +1,19 @@
-## Task : Restructuring the project, migrating forwards/ backwards on components, implement routing, creating custom modules, one component dynamically injected into another when a matching route is navigated.  : till :11:30.
+Lab 4: State Management with NgRx
+====================================
+
+Structure Component
+Package Size: 3
+
+Increment Decrement
+
+==================================================
+Extend our app to implement the below functionality:
+
+Preview Component
+Package Size: 3
+Increment Decrement
+
+===========================
 
 ### :rocket: Case Study Lab 1 
 ### Angular Core: Device Catalog & Profile Management
