@@ -1,3 +1,31 @@
+### :shield: Lab 5: Securing Routes in Angular
+
+---
+
+#### :dart: Objectives
+
+- **Create a secure route** that only allows authenticated users to access the device catalog.
+- **Implement a simple authentication service** that checks if a user is logged in.
+- **Use Angular's route guards** to protect the device catalog route.
+- **Display a login form** if the user is not authenticated.
+- **Redirect to device catalog** upon successful login.
+- **Maintain authentication state** across page reloads.
+- **Implement logout functionality** that clears authentication state and redirects to login.
+- **Customize the menu** to show different options based on authentication state (e.g., "Login" vs. "Logout").
+- **Display the logged-in user's name** to the right of the navigation bar.
+
+---
+
+#### :bulb: Outcomes
+
+- :white_check_mark: Secure Angular routes using guards.
+- :white_check_mark: Maintain and display authentication state.
+- :white_check_mark: Provide a user-friendly login/logout experience.
+
+---
+
+
+
 Lab 4: State Management with NgRx
 ====================================
 
