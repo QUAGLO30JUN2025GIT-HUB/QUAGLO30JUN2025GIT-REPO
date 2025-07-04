@@ -15,10 +15,8 @@ import { increment, decrement } from './packagesize.action';
 export const initialState = 0;
 export const packageSizeReducer = createReducer(
     initialState,
-    // The on function is used to define how the state should change in response to specific actions.
     on(increment, (state) => state + 1),
     on(decrement, (state) => state - 1)
-    // Try it : reset
 );
 
 
