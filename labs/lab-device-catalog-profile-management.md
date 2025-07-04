@@ -1,4 +1,6 @@
+
 ### :shield: Lab 5: Securing Routes in Angular
+Time : 40 mins (Till 3:00 PM)
 
 ---
 
