@@ -1,1 +1,20 @@
-<p>login works!</p>
+<div class="container">
+    <br>
+    <h2>Login</h2>
+    <p>Please enter your login credentials.</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <br><br>
+    <div class="form-group">
+        <label for="loginid">Login ID:</label>
+        <input type="text" formControlName="loginid" class="form-control" id="loginid" placeholder="Enter Login ID"
+            style="width:300px">
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" formControlName="password" class="form-control" id="password"
+            placeholder="Enter Password" style="width:300px">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+</div>

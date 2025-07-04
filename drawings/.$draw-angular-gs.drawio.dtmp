@@ -1548,6 +1548,9 @@
         <mxCell id="h-PhBB9JyDwlWImIrbJm-3" value="push based reactivity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="670" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="h-PhBB9JyDwlWImIrbJm-4" value="immutable data flow" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="260" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
