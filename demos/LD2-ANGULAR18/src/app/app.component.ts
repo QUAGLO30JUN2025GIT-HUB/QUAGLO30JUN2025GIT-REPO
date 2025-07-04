@@ -15,5 +15,10 @@ export class AppComponent  {
   constructor() {
     
   }
-
+  isLoggedIn(): boolean {
+    // Check if the user is logged in by checking the session storage.
+    // If the 'loginid' key exists, it means the user is logged in.
+    return window.sessionStorage.getItem('loggedIn') === 'yes';
+  }
+  // Try : Logout.... and navigate to Login page.
 }

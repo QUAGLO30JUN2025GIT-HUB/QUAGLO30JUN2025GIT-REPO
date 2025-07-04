@@ -4,12 +4,15 @@ import {RouterModule,Routes} from '@angular/router';
 import { AddEmpComponent } from './app/add-emp/add-emp.component';
 import { ListEmpComponent } from './app/list-emp/list-emp.component';
 import { LoginComponent } from './app/login/login.component';
+import { AuthGuardService } from './app/service/auth-guard.service';
 
 // Please extract the routes and place it in the app.routes.ts file.
 const routes:Routes= [
    // Application routes can be defined here.
-//    { path:'login', component:LoginComponent},
-      {path:'employees', component:ListEmpComponent},
+   // This route is not protected by the AuthGuardService, so it can be accessed without authentication.
+   { path:'login', component:LoginComponent},
+    // This route is protected by the AuthGuardService, so it can only be accessed if the user is authenticated.
+      {path:'employees', component:ListEmpComponent, canActivate: [AuthGuardService]}, 
 //    {path:'add', component:AddEmpComponent},
    {path:'**', component:LoginComponent} // Wildcard route for a 404 page
 ]
@@ -19,7 +22,8 @@ const routes:Routes= [
     // The imports array is used to import other modules that this module depends on.
     imports: [ RouterModule.forRoot(routes)],
     // The exports array is used to export the RouterModule so that it can be used in other modules.
-    exports: [RouterModule]
+    exports: [RouterModule],
+
 })
 
 // The AppRoutingModule is a custom module that is used to configure the routing for the application.

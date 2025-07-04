@@ -39,8 +39,8 @@ export class LoginComponent {
     if (formData.loginid === 'angular' || formData.password === 'ngpass') {
       // Perform login action
       console.log('Login successful');
-      sessionStorage.setItem('loginid', "yes");
-      this.router.navigate(['/empoyees']);
+      sessionStorage.setItem('loggedIn', "yes");
+      this.router.navigate(['/employees']);
     }
     else {
       // Handle login failure
